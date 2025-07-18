@@ -1,0 +1,20 @@
+<div class="notificacao-container">
+  <h1>Sistema de Notificações</h1>
+  <div class="input-group">
+    <input 
+      type="text" 
+      [(ngModel)]="conteudoMensagem" 
+      placeholder="Digite sua mensagem..."
+      (keyup.enter)="enviar()"
+    />
+    <button (click)="enviar()">Enviar Notificação</button>
+  </div>
+
+  <ul class="notification-list">
+    <li *ngFor="let notificacao of notificacoes" [ngClass]="'status-' + notificacao.status.toLowerCase()">
+      <span class="content"><strong>Mensagem:</strong> {{ notificacao.content }}</span>
+      <span class="status"><strong>Status:</strong> {{ notificacao.status }}</span>
+      <span class="id">ID: {{ notificacao.id }}</span>
+    </li>
+  </ul>
+</div>
