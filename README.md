@@ -24,7 +24,7 @@ O sistema consiste em uma aplicação simplificada de notificações assíncrona
 **1. Clone o repositório:**
 ```bash
 git clone https://github.com/Decioh/app-mensagens.git
-cd vr-software-desafio-fullstack
+cd app-mensagens
 ```
 
 **2. Inicie o RabbitMQ (com Docker):**
